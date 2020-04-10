@@ -1,0 +1,13 @@
+from collections import deque
+stack = deque()
+stack.append('a')
+stack.append('b')
+stack.append('c')
+print('Initial list')
+print(stack)
+print('\nElements that are popped:')
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
+print('\nElements in stack after popping')
+print(stack)
