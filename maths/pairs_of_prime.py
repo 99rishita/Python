@@ -7,10 +7,10 @@ def pair(n):
         if ind != None:
             lis.append(ind)
     print(lis)
-    for p in lis:
-        q = int(n/p)
-        if q in lis:
-            print(p, q)
+    for i in range(0, len(lis)):
+        for j in range(i+1, len(lis)):
+            if (i*j)<=n:
+                print(lis[i], lis[j])
 
 def prime(num):
     count = 0
